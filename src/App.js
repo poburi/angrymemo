@@ -10,20 +10,23 @@ class App extends React.Component {
     console.log(props.test);
     this.state = {
       person: [
-        { name: "buribooth", age: 27 },
-        { name: "김유신", age: 64 },
-        { name: "황준필", age: 34 }
+        { name: "buribooth", age: 27, myfunc: () => console.log("test") },
+        { name: "연개소문", age: 64 },
+        { name: "대조영", age: 26 }
       ]
     };
   }
   render() {
     const { person } = this.state;
+    const myfunc = () => {
+      console.log("진짜진짜???");
+    };
     return (
       <div className="App">
         <h1>{this.props.test}</h1>
-        <Person name={person[0].name} age={person[0].age}></Person>
-        <Person name={person[1].name} age={person[1].age}></Person>
-        <Person name={person[2].name} age={person[2].age}></Person>
+        <Person {...person[0]} myfunc={myfunc} st={this.state}>
+          <div>안녕하세요!</div>
+        </Person>
       </div>
     );
   }

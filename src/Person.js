@@ -1,21 +1,25 @@
 import React from "react";
 
-const Person = ({ name, age }) => (
+const Person = props => (
   <div>
-    <p>
-      이름은 {name}고 나이는 {age}야.
-    </p>
+    <h1>
+      이름은 {props.name} 나이는 {props.age}
+    </h1>
+    <h2>{props.children}</h2>
+    {props.myfunc()}
+    {console.log(props.st)}
   </div>
 );
 
 // class Person extends React.Component {
 //   render() {
-//     const { name, age } = this.props;
+//     // const { name, age } = this.props;
 //     return (
 //       <div>
-//         <p>
-//           이름은 {name}고 나이는 {age}야.
-//         </p>
+//         <h1>
+//           이름은 {this.props.name}고 나이는 {this.props.age}야.
+//         </h1>
+//         <h2>{this.props.children}</h2>
 //       </div>
 //     );
 //   }
