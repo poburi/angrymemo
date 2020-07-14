@@ -5,7 +5,7 @@
 ## Hook-01 
 useState()를 활용한 Input onChage 기초 학습
 
-# Hook-2(랜덤 고양이 사이트)
+## Hook-02(랜덤 고양이 사이트)
 useState(), useEffect(), Axios를 활용한 API fetch 기초 학습
 
 🍯 꿀팁
@@ -16,6 +16,8 @@ useEffect(()=>{
  ...
 }.[])
 ```
+
+## Hook-03
 
 # Hook
 - useTitle
