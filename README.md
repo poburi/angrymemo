@@ -1,16 +1,22 @@
-브랜치 별로 정리
+🔊 리액트 이론을 브랜치 별로 정리하였습니다.
 
-# Hook-01 
+# 브랜치 별 내용 
 
-input 관련 기초
+## Hook-01 
+useState()를 활용한 Input onChage 기초 학습
 
-# Hook-2    
+# Hook-2(랜덤 고양이 사이트)
+useState(), useEffect(), Axios를 활용한 API fetch 기초 학습
 
-- useEffect, useState, Axios, Async, Await
-Axios로 API fetch하는 방법 기초
+🍯 꿀팁
+업데이트 노노! `componentDidMount()` 역할만 하고 싶다면?:
+```js
+useEffect(()=>{
+ ...
+}.[])
+```
 
 # Hook
-
 - useTitle
 - useInput
 - usePageLeave
@@ -25,13 +31,4 @@ Axios로 API fetch하는 방법 기초
 - usePreventLeave
 - useConfirm
 - useAxios
-
-
-# useEffect
-
-```
-useEffect(()=>{
-
-}.[])
-```
-
+ 
