@@ -9,7 +9,8 @@ useState()를 활용한 Input onChage 기초 학습
 useState(), useEffect(), Axios를 활용한 API fetch 기초 학습
 
 🍯 꿀팁
-업데이트 노노! `componentDidMount()` 역할만 하고 싶다면?:
+
+업데이트는 필요 없이 `componentDidMount()` 역할만 하고 싶다면?:
 ```js
 useEffect(()=>{
  ...
